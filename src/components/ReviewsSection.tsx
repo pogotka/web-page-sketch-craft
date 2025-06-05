@@ -58,7 +58,7 @@ const ReviewsSection = () => {
             </Card>
           ))}
         </div>
-      </CardContent>
+      </div>
     </section>
   );
 };
