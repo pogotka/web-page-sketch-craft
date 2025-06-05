@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section 
       className="py-20 px-4 relative bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=800&fit=crop)',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&h=800&fit=crop)',
       }}
     >
       <div className="container mx-auto text-center relative z-10">
@@ -27,9 +27,6 @@ const HeroSection = () => {
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
-          <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-gray-800">
-            Готовые туры на Байкал
-          </Button>
         </div>
         
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">

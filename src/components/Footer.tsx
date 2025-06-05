@@ -3,22 +3,12 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-12 px-4">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">TURION</h3>
             <p className="text-gray-300">
               Создаем незабываемые путешествия по Байкалу
             </p>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Туры</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li>Минимальный - 7 дней</li>
-              <li>Комфортный - 14 дней</li>
-              <li>Расширенный - 20 дней</li>
-              <li>Максимальный - 30 дней</li>
-            </ul>
           </div>
           
           <div>

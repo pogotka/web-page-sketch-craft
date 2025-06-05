@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import TimeOfYearStep from "@/components/constructor/TimeOfYearStep";
@@ -133,6 +133,13 @@ const TourConstructor = () => {
             </CardContent>
           </Card>
         </div>
+      </div>
+      
+      {/* Кнопка связи с менеджером в правом нижнем углу */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+          <MessageCircle className="w-6 h-6" />
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 interface Props {
   tourData: any;
@@ -102,9 +101,6 @@ const BookingStep = ({ tourData, setTourData }: Props) => {
             <p className="text-gray-600 mb-6">
               Предоплата составляет 5000 рублей с человека
             </p>
-            <Button size="lg" className="bg-green-600 hover:bg-green-700">
-              Перейти к оплате
-            </Button>
           </div>
         </CardContent>
       </Card>
