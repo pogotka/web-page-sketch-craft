@@ -9,7 +9,7 @@ const ToursSection = () => {
       title: "Минимальный тур",
       description: "7 дней КругоБайкалки с основными достопримечательностями",
       price: "от 35 000 ₽",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
       type: "Минимальный",
       duration: "7 дней"
     },
@@ -18,7 +18,7 @@ const ToursSection = () => {
       title: "Комфортный тур",
       description: "14 дней на Байкале с комфортным размещением",
       price: "от 65 000 ₽",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=400&h=300&fit=crop",
       type: "Комфортный",
       duration: "14 дней"
     },
@@ -36,7 +36,7 @@ const ToursSection = () => {
       title: "Максимальный тур",
       description: "30 дней полного исследования КругоБайкалки",
       price: "от 140 000 ₽",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop",
       type: "Максимальный",
       duration: "30 дней"
     }

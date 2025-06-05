@@ -1,36 +1,35 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import TimeOfYearStep from "@/components/constructor/TimeOfYearStep";
-import TourTypeStep from "@/components/constructor/TourTypeStep";
-import DirectionStep from "@/components/constructor/DirectionStep";
-import PackageStep from "@/components/constructor/PackageStep";
-import PersonalDataStep from "@/components/constructor/PersonalDataStep";
-import BookingConfirmationStep from "@/components/constructor/BookingConfirmationStep";
+import GroupStep from "@/components/constructor/GroupStep";
+import DurationStep from "@/components/constructor/DurationStep";
+import ContactsStep from "@/components/constructor/ContactsStep";
+import AdditionalServicesStep from "@/components/constructor/AdditionalServicesStep";
+import BookingStep from "@/components/constructor/BookingStep";
 import PaymentStep from "@/components/constructor/PaymentStep";
 
 const TourConstructor = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [tourData, setTourData] = useState({
     timeOfYear: "",
-    tourType: "",
-    direction: "",
-    package: "",
-    personalData: {},
+    groupType: "",
+    duration: "",
+    contactData: {},
     additionalServices: []
   });
 
   const steps = [
     "Время года",
-    "Индивидуальный/Групповой",
-    "Направление", 
-    "Выбор пакета",
-    "Персональные данные",
-    "Подтверждение бронирования",
+    "Группа",
+    "Длительность", 
+    "Контакты",
+    "Доп. услуги",
+    "Бронирование",
     "Оплата"
   ];
 
@@ -51,15 +50,15 @@ const TourConstructor = () => {
       case 1:
         return <TimeOfYearStep tourData={tourData} setTourData={setTourData} />;
       case 2:
-        return <TourTypeStep tourData={tourData} setTourData={setTourData} />;
+        return <GroupStep tourData={tourData} setTourData={setTourData} />;
       case 3:
-        return <DirectionStep tourData={tourData} setTourData={setTourData} />;
+        return <DurationStep tourData={tourData} setTourData={setTourData} />;
       case 4:
-        return <PackageStep tourData={tourData} setTourData={setTourData} />;
+        return <ContactsStep tourData={tourData} setTourData={setTourData} />;
       case 5:
-        return <PersonalDataStep tourData={tourData} setTourData={setTourData} />;
+        return <AdditionalServicesStep tourData={tourData} setTourData={setTourData} />;
       case 6:
-        return <BookingConfirmationStep tourData={tourData} setTourData={setTourData} />;
+        return <BookingStep tourData={tourData} setTourData={setTourData} />;
       case 7:
         return <PaymentStep tourData={tourData} setTourData={setTourData} />;
       default:
